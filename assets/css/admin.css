@@ -1,0 +1,102 @@
+/* WhatsApp Chat Admin Settings Styles */
+.whatsapp-chat-settings {
+    max-width: 960px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-chat-settings h1 {
+    color: #1d2327;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid #e2e4e7;
+    font-size: 1.5em;
+}
+
+.whatsapp-chat-settings form {
+    padding: 20px;
+}
+
+.whatsapp-chat-settings .form-table {
+    margin-top: 0;
+}
+
+.whatsapp-chat-settings .form-table th {
+    padding: 20px 10px 20px 0;
+    width: 200px;
+    color: #1d2327;
+    font-weight: 600;
+}
+
+.whatsapp-chat-settings .form-table td {
+    padding: 20px 10px;
+}
+
+.whatsapp-chat-settings input[type="text"],
+.whatsapp-chat-settings textarea {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    padding: 8px;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.whatsapp-chat-settings input[type="text"]:focus,
+.whatsapp-chat-settings textarea:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.whatsapp-chat-settings .description {
+    color: #646970;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+.whatsapp-chat-settings code {
+    background: #f0f0f1;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+#profile-picture-preview {
+    margin-bottom: 15px;
+}
+
+#profile-picture-preview img {
+    border-radius: 50%;
+    border: 2px solid #e2e4e7;
+    max-width: 100px;
+    height: auto;
+}
+
+.whatsapp-chat-settings .button {
+    margin-right: 10px;
+}
+
+.whatsapp-chat-settings .submit {
+    padding: 20px 0 0;
+    margin-top: 20px;
+    border-top: 1px solid #e2e4e7;
+}
+
+.whatsapp-chat-settings .submit .button-primary {
+    background: #25D366;
+    border-color: #1a9247;
+    color: #fff;
+    padding: 6px 20px;
+    height: auto;
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.whatsapp-chat-settings .submit .button-primary:hover {
+    background: #1a9247;
+    border-color: #146c34;
+}

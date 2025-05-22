@@ -1,0 +1,36 @@
+.request-quote-button {
+    background-color: #25d366!important;
+    color: #ffffff!important;
+    padding: 6px 24px!important;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1em!important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    gap: 8px;
+    line-height: 1;
+}
+
+.request-quote-button svg,
+.request-quote-button svg path {
+    width: 35px;
+    height: 35px;
+    fill: white!important;
+    color: white!important;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.request-quote-button:hover {
+    background-color: #128c7e!important;
+    color: #ffffff;
+}
+
+.request-quote-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.5);
+}

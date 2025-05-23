@@ -15,7 +15,6 @@ class Request_Quote_Button {
 
     private function __construct() {
         require_once WQ_PLUGIN_PATH . 'includes/class-quote-message-handler.php';
-        add_action('woocommerce_after_shop_loop_item', array($this, 'render_request_quote_button'), 10);
         add_action('woocommerce_single_product_summary', array($this, 'render_request_quote_button'), 30);
         add_action('wp_enqueue_scripts', array($this, 'enqueue_styles'));
     }

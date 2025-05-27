@@ -17,14 +17,33 @@ class Request_Quote_Button {
         require_once WQ_PLUGIN_PATH . 'includes/class-quote-message-handler.php';
         add_action('woocommerce_single_product_summary', array($this, 'render_request_quote_button'), 30);
         add_action('wp_enqueue_scripts', array($this, 'enqueue_styles'));
+        add_shortcode('whatsapp_quote', array($this, 'shortcode_request_quote_button'));
     }
 
     public function enqueue_styles() {
         wp_enqueue_style('request-quote', plugins_url('assets/css/request-quote.css', WQ_PLUGIN_FILE));
     }
 
-    public function render_request_quote_button() {
+    public function shortcode_request_quote_button($atts) {
         global $product;
+        
+        // If product ID is provided in shortcode
+        if (isset($atts['product_id'])) {
+            $product = wc_get_product($atts['product_id']);
+        }
+        
+        // Get the button HTML
+        ob_start();
+        $this->render_request_quote_button($product);
+        return ob_get_clean();
+    }
+
+    public function render_request_quote_button($specific_product = null) {
+        global $product;
+        
+        // Use specific product if provided, otherwise use global product
+        $product = $specific_product ? $specific_product : $product;
+        
         if (!$product || !apply_filters('whatsapp_quote_show_button', true, $product)) return;
 
         $product_name = $product->get_name();

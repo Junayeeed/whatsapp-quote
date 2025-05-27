@@ -3,7 +3,7 @@
 Plugin Name: WhatsApp Quote
 Plugin URI: 
 Description: A WordPress plugin for requesting quotes via WhatsApp
-Version: 1.2.0
+Version: 1.2.1
 Author: Muhammad Junayed
 Author URI: https://www.junayed.dev
 License: GPL v2 or later

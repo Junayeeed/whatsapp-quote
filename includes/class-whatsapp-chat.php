@@ -89,6 +89,7 @@ class WhatsApp_Chat {
                                 value="<?php echo esc_attr(get_option('wq_whatsapp_number')); ?>" 
                                 class="regular-text">
                             <p class="description">Enter your WhatsApp number with country code without "+" (e.g., 8801682024427)</p>
+                            <p class="description">You can use shortcode <code>[whatsapp_quote]</code> to display the quote button anywhere. For a specific product, use <code>[whatsapp_quote product_id="123"]</code></p>
                         </td>
                     </tr>
                     <tr>
